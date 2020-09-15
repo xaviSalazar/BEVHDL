@@ -1,6 +1,6 @@
 Assembler report for PiloteBarreFranche
-Tue Sep 15 11:57:20 2020
-Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+Tue Sep 15 19:20:30 2020
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINOME7/BEProjet/PiloteBarreFranche.sof
-  6. Assembler Device Options: C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINOME7/BEProjet/PiloteBarreFranche.pof
+  5. Assembler Device Options: C:/Users/Xavi/Documents/PiloteBarreFranche/PiloteBarreFranche.sof
+  6. Assembler Device Options: C:/Users/Xavi/Documents/PiloteBarreFranche/PiloteBarreFranche.pof
   7. Assembler Messages
 
 
@@ -19,7 +19,7 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Sep 15 11:57:20 2020 ;
+; Assembler Status      ; Successful - Tue Sep 15 19:20:30 2020 ;
 ; Revision Name         ; PiloteBarreFranche                    ;
 ; Top-level Entity Name ; PiloteBarreFranche                    ;
 ; Family                ; Cyclone II                            ;
@@ -52,6 +52,8 @@ applicable agreement for further details.
 ; Option                                                                      ; Setting  ; Default Value ;
 +-----------------------------------------------------------------------------+----------+---------------+
 ; Use smart compilation                                                       ; Off      ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation  ; On       ; On            ;
+; Enable compact report table                                                 ; Off      ; Off           ;
 ; Generate compressed bitstreams                                              ; On       ; On            ;
 ; Compression mode                                                            ; Off      ; Off           ;
 ; Clock source for configuration device                                       ; Internal ; Internal      ;
@@ -76,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                          ;
-+------------------------------------------------------------------------------------+
-; File Name                                                                          ;
-+------------------------------------------------------------------------------------+
-; C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINOME7/BEProjet/PiloteBarreFranche.sof ;
-; C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINOME7/BEProjet/PiloteBarreFranche.pof ;
-+------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+
+; Assembler Generated Files                                         ;
++-------------------------------------------------------------------+
+; File Name                                                         ;
++-------------------------------------------------------------------+
+; C:/Users/Xavi/Documents/PiloteBarreFranche/PiloteBarreFranche.sof ;
+; C:/Users/Xavi/Documents/PiloteBarreFranche/PiloteBarreFranche.pof ;
++-------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINOME7/BEProjet/PiloteBarreFranche.sof ;
-+----------------+---------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                     ;
-+----------------+---------------------------------------------------------------------------------------------+
-; Device         ; EP2C35F672C6                                                                                ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                                  ;
-; Checksum       ; 0x003D245B                                                                                  ;
-+----------------+---------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Xavi/Documents/PiloteBarreFranche/PiloteBarreFranche.sof ;
++----------------+----------------------------------------------------------------------------+
+; Option         ; Setting                                                                    ;
++----------------+----------------------------------------------------------------------------+
+; Device         ; EP2C35F672C6                                                               ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                 ;
+; Checksum       ; 0x0038D34C                                                                 ;
++----------------+----------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINOME7/BEProjet/PiloteBarreFranche.pof ;
-+--------------------+-----------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                 ;
-+--------------------+-----------------------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                                  ;
-; JTAG usercode      ; 0x00000000                                                                              ;
-; Checksum           ; 0x1C6218E9                                                                              ;
-; Compression Ratio  ; 3                                                                                       ;
-+--------------------+-----------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Xavi/Documents/PiloteBarreFranche/PiloteBarreFranche.pof ;
++--------------------+------------------------------------------------------------------------+
+; Option             ; Setting                                                                ;
++--------------------+------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                 ;
+; JTAG usercode      ; 0x00000000                                                             ;
+; Checksum           ; 0x1C6A242E                                                             ;
+; Compression Ratio  ; 3                                                                      ;
++--------------------+------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -114,16 +116,15 @@ applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II Assembler
-    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Sep 15 11:57:19 2020
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Sep 15 19:20:28 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PiloteBarreFranche -c PiloteBarreFranche
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
-Info: The Active Serial/Parallel mode CONF_DONE pin error check is disabled
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 254 megabytes
-    Info: Processing ended: Tue Sep 15 11:57:20 2020
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 278 megabytes
+    Info: Processing ended: Tue Sep 15 19:20:30 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

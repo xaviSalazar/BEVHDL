@@ -25,6 +25,8 @@ architecture behv of gestion_anemo is
 signal valeur_present   : std_logic_vector (25 downto 0):=(others => '0');
 signal valeur_precedent : std_logic_vector (25 downto 0):=(others => '0');
 signal valeur_calcule : std_logic_vector (25 downto 0);
+signal cinquenta: std_logic_vector (25 downto 0) :=  "10111110101111000010000000";
+
 signal iValeurCalcule, iDataAnemometre : integer;
 BEGIN
 -- process pour comptage avec horloge de 50M
@@ -51,9 +53,12 @@ begin
         valeur_precedent <= valeur_present;
      end if;
 end process;
-iValeurCalcule <= to_integer(unsigned(valeur_calcule));
-iDataAnemometre <= 50000000 / iValeurCalcule ;
-data_anemometre <= std_logic_vector(to_unsigned(iDataAnemometre, data_anemometre'length));
+
+--iValeurCalcule <= to_integer(unsigned(valeur_calcule));
+--iDataAnemometre <= 50000000 / iValeurCalcule ;
+--data_anemometre <= std_logic_vector(to_unsigned(iDataAnemometre, data_anemometre'length));
+--data_anemometre <= std_logic_vector(to_unsigned( to_integer( unsigned (cinquenta) / unsigned (valeur_calcule)) ,26 ) );
+data_anemometre <= std_logic_vector(to_unsigned( to_integer( 50000000 / unsigned (valeur_calcule)) ,8 ) );
 
 END behv;
 
